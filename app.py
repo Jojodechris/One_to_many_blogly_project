@@ -62,6 +62,11 @@ def page():
     return render_template("detail.html", new_user=new_user)
 
 
+@app.route('/tag')
+def tag():
+    return render_template("creationTag.html")
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
 # if __name__ == "__main__":
